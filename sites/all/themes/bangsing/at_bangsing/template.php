@@ -92,3 +92,22 @@ function adaptivetheme_subtheme_preprocess_block(&$vars) {
 function adaptivetheme_subtheme_process_block(&$vars) {
 }
 // */
+/**
+* hook_form_FORM_ID_alter
+*/
+function at_bangsing_form_search_block_form_alter(&$form, &$form_state, $form_id) {
+    $form['search_block_form']['#title'] = t('What you are looking for?'); // Change the text on the label element
+    $form['search_block_form']['#title_display'] = 'invisible'; // Toggle label visibilty
+    $form['search_block_form']['#size'] = 40;  // define size of the textfield
+    $form['search_block_form']['#default_value'] = t('What you are looking for?'); // Set a default value for the textfield
+    $form['actions']['submit']['#value'] = t('Go'); // Change the text on the submit button
+
+    // Add extra attributes to the text box
+    $form['search_block_form']['#attributes']['onblur'] = "if (this.value == '') {this.value = 'What you are looking for?';}";
+    $form['search_block_form']['#attributes']['onfocus'] = "if (this.value == 'What you are looking for?') {this.value = '';}";
+    // Prevent user from searching the default text
+    $form['#attributes']['onsubmit'] = "if(this.search_block_form.value=='What you are looking for?'){ alert('Please enter a search'); return false; }";
+
+    // Alternative (HTML5) placeholder attribute instead of using the javascript
+    $form['search_block_form']['#attributes']['placeholder'] = t('What you are looking for?');
+}

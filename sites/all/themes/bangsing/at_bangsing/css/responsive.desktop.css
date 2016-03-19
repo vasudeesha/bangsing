@@ -7,3 +7,140 @@
  *
  * - Read the _README file in this directory, it contains useful help and other information.
  */
+#branding {
+  float: left;
+}
+
+.header-right {
+  float: right;
+  margin-top:  20px;
+}
+
+.home-banner {
+  float: left;
+}
+
+.home-banner .block {
+  margin-bottom: 0;
+}
+
+.home-banner .block-inner {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.view-home-banner ul {
+  padding: 0;
+}
+
+.view-home-banner .flexslider {
+  border: none;
+  margin-bottom: 0;
+}
+
+.view-home-banner .flex-control-nav {
+  display: none;
+}
+
+.view-home-banner .flex-direction-nav a::before{
+  font-size: 30px;
+}
+
+.view-home-banner .slides {
+  position: relative;
+}
+
+.view-home-banner .slides .views-field-body {
+  position: absolute;
+  top: 260px;
+  left: 40px;
+}
+
+.view-home-banner .slides .views-field-body p {
+  color: #fff;
+  font-family: 'open_sanslight';
+  font-size: 50px;
+}
+
+.view-home-banner .slides .views-field-body p span {
+  color: #fff;
+  font-family: 'open_sansbold';
+  font-size: 50px;
+}
+
+
+.header-right #edit-submit {
+  display: none;
+}
+
+.header-right .block {
+  margin-bottom: 0;
+}
+
+.header-right input[type="search"] {
+  width: 299px;
+  height: 28px;
+  border: 1px solid #767676;
+  color: #767676;
+}
+
+body.front #columns {
+  width: 100%;
+  float: left;
+  background-color: #011817;
+}
+
+.view-home-new-projects .jcarousel-skin-default .jcarousel-container {
+  background: none;
+  border: none;
+  border-radius: 0;
+}
+
+.view-home-new-projects .jcarousel-skin-default .jcarousel-container-horizontal {
+  padding: 0;
+  width: 100% !important;
+}
+
+.view-home-new-projects .jcarousel-prev.jcarousel-prev-horizontal {
+  display: none;
+}
+
+.view-home-new-projects .jcarousel-next.jcarousel-next-horizontal {
+  display: none;
+}
+
+.view-home-new-projects .jcarousel-skin-default .jcarousel-item {
+  width: 200px !important;
+  height:  363px;
+}
+
+.view-home-new-projects .jcarousel-skin-default ul {
+  width: 100% !important;
+  height: 400px;
+  overflow: hidden !important;
+}
+
+.view-home-new-projects .jcarousel-skin-default .jcarousel-clip-horizontal {
+  width: 100% !important;
+}
+
+.view-home-new-projects {
+  float: left;
+}
+
+.view-home-new-projects .views_slideshow_cycle_main {
+  width: 100% !important;
+  float: left;
+}
+
+.view-home-new-projects .views-slideshow-cycle-main-frame {
+  width:  100% !important;
+}
+
+.view-home-new-projects .views-slideshow-cycle-main-frame-row {
+  width: 100% !important;
+}
+
+.view-home-new-projects .views_slideshow_cycle_main .views-row {
+  float: left;
+}
